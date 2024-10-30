@@ -5,11 +5,12 @@ using namespace std;
 class Timer
 {
     private:
-        float time_elapsed = 0.00;
+        time_t start_time;
+        time_t end_time;
         bool stopped = true;
     public:
         Timer();
         void start();
         void stop();
-        float elapsed();
+        int elapsed();
 };
